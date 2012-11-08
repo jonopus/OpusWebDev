@@ -1,0 +1,382 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pas",
+				"passThroughClick"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"log",
+				"Logger"
+			],
+			[
+				"sel",
+				"selectedTileSize"
+			],
+			[
+				"se",
+				"selectedScope"
+			],
+			[
+				"selected",
+				"selectedYear"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"FF",
+				"ff0000"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"ex",
+				"extends"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"ts",
+				"tst"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Java/Ant.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 97.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/build.xml",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/HTML360.sublime-workspace",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/HTML360.sublime-project",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/css/main.css",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/ApplicationMediator.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/AnimationMediator.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/index.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/tweenjs-0.3.d.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BubbleUpLogo.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/constants/Constants.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/js/main.js",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/asd.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/jquery.d.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/org/casalib/time/Sequence.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/controller/PrepViewCommand.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/server/HttpServer.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/preloadjs-0.2.d.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/easeljs-0.5.d.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/SideBarMediator.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/org/casalib/process/Process.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/org/casalib/time/Timer.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/qwe.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/zxc.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/build/ApplicationCompile.list",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/controller/PrepBuisnessCommand.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/controller/PrepControllCommand.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/controller/PrepModelCommand.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/HTML360.ts"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\jadams\\Documents\\GitHub\\OpusWebDev\\lib",
+			"C:\\Users\\jadams\\Documents\\GitHub\\OpusWebDev\\public\\js",
+			"C:\\Users\\jadams\\Documents\\GitHub\\OpusWebDev\\modules",
+			"C:\\Users\\jadams\\Documents\\GitHub\\OpusWebDev\\modules\\shell"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"html360",
+			"html",
+			"createjs.Tween.get(this.logo)",
+			"ball",
+			"createjs.Tween.get(this.ball)",
+			"bgImage",
+			"History",
+			"load",
+			"PAGE_CHANGE",
+			"handlePageChange",
+			"pointer-events",
+			"handlePageChange",
+			"updateText",
+			"this.text",
+			"text",
+			"window[\"History\"]",
+			"'",
+			"handleHashChange",
+			"History",
+			"updateText",
+			"History",
+			"bbq",
+			"$[\"param\"].fragment()",
+			"$[\"bbq\"]",
+			"bbq",
+			"animation",
+			"nav",
+			"animation",
+			"h1",
+			".html",
+			"this",
+			"call",
+			"qwe",
+			"createSlide",
+			"animation",
+			"createBgImage",
+			",\"",
+			",",
+			"\",\"",
+			"{",
+			"Cinzel",
+			"smoothing",
+			"html",
+			"$[\"param\"].fragment()",
+			"fragment",
+			"console.log",
+			"console",
+			"face",
+			"text",
+			"li",
+			"ul",
+			"shadow",
+			"163B4A",
+			"5px",
+			"aaa",
+			"5px 10px #aaa",
+			"e44d26",
+			"f16529",
+			"font",
+			"face",
+			"this.canvas",
+			"SideBarMediator",
+			"200",
+			"update",
+			"createSlide",
+			"addItemsToStage",
+			"load",
+			"appl",
+			"console.log(",
+			"console.log",
+			"getMediatorName",
+			".result",
+			"getResult",
+			"getImage",
+			"logo",
+			"pluginData",
+			"Ease",
+			"Stage",
+			"stage",
+			"(",
+			"shape.graphics",
+			"(",
+			":",
+			"?",
+			":",
+			"setTransform",
+			"Shape",
+			"(",
+			".",
+			"beginLinearGradientFill",
+			"(",
+			").",
+			".",
+			".p",
+			".f",
+			"beginLinearGradientFill",
+			".lf",
+			"Graphics",
+			"graphics",
+			"lf",
+			"Shape",
+			"createjs.",
+			":createjs.",
+			"createjs.",
+			"com.opus.signals",
+			"js/",
+			"com.opus.signals",
+			"aside",
+			"asside",
+			"canvas",
+			"$",
+			"App",
+			"nav li",
+			"@",
+			"aside",
+			".getState()",
+			".\n",
+			"bbq1",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			" '",
+			".\n",
+			"\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Main",
+			"ApplicationMediator",
+			"lib/org/opus/util",
+			"lib/opus/util",
+			"Logger.log",
+			"Returns: createjs.Graphics",
+			"class",
+			"",
+			"string",
+			"number",
+			":",
+			"",
+			"this._",
+			"",
+			"this.asd",
+			"",
+			"this.ball",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 121.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"typ",
+				"src/TypeScriptTest.ts"
+			],
+			[
+				"pro",
+				"TypeScriptTest.sublime-project"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true
+}
