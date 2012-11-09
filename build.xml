@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Application" basedir="." default="buildApp">
-	<property name="tsc" value="C:\Users\jadams\AppData\Roaming\npm\tsc.cmd"/>
+	<property file="build/user.properties" />
 	
 	<target name="buildAll" description="build all" depends="buildApp,buildServer,runServer" />
 
@@ -22,4 +22,13 @@
 		</exec>
 	</target>
 
+	<target name="deploy">
+		<ftp
+			server="${ftp.server}"
+			userid="${ftp.user}"
+			password="${ftp.password}"
+		>
+			<fileset dir="./public/js"/>
+		</ftp>
+	</target>
 </project>

@@ -1,0 +1,4 @@
+modules/shell/src/Main.ts
+
+--target ES5 
+--out public/js/main.js

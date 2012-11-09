@@ -1,0 +1,5 @@
+typescript.compiler.path = C:/Path/AppData/Roaming/npm/tsc.cmd
+
+ftp.server=ftp.opuswebdev.com
+ftp.user=user
+ftp.password=password
