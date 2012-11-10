@@ -29,6 +29,8 @@
 			password="${ftp.password}"
 			passive="yes"
 			verbose="yes"
+			depends="yes"
+			timediffauto="true"
 		>
 			<fileset dir="./public"/>
 		</ftp>

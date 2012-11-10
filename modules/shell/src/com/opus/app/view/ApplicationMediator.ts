@@ -8,6 +8,8 @@ module opus {
 	export class ApplicationMediator extends puremvc.Mediator {
 		public static NAME:string = "opus.ApplicationMediator";
 
+		private content:JQuery;
+
 		constructor(){
 			super(ApplicationMediator.NAME, null);
 			Logger.log("ApplicationMediator.constructor", ApplicationMediator.NAME);
@@ -30,6 +32,7 @@ module opus {
 
 			$('a[href^=#]').click((e)=>this.handleHrefClick(e));
 
+			//TODO: https://github.com/balupton/history.js/wiki/Intelligent-State-Handling
 			window["History"].Adapter.bind(window, "statechange", (e)=>this.handleHashChange(e));
 
 			$(window).trigger('statechange');
@@ -67,22 +70,28 @@ module opus {
 		private handlePageChange(page:string){
 			Logger.log("ApplicationMediator.loadContent", page);
 
-			$('#aside').slideUp(400);
-			$("#main-content").fadeOut(400, (e)=>this.loadContent())
+			this.content = $("<div />")
+			this.content.load(this.getPage(), (e)=>this.loadContent())
 		}
 
 		private loadContent(){
 			Logger.log("ApplicationMediator.loadContent", this.getPage());
-			
-			$("#main-content").load(this.getPage(), (e)=>this.showContent())
+
+			$('#aside').slideUp(400);
+			$("#main-content").fadeOut(400, (e)=>this.showContent())
 		}
 
 		private showContent(){
 			Logger.log("ApplicationMediator.showContent");
-			var html = $('#main-content aside').detach().html()
-			$('#aside').html(html || "");
-			$('#aside').slideDown(400);
+			$('#main-content').html(this.content.get(0));
 			$("#main-content").fadeIn(400);	
+			
+			var html = $('#main-content aside').detach().html()
+			if(html){
+				$('#aside').html(html || "");
+				$('#aside').slideDown(400);
+			}
+				
 		}
 
 		public onRemove():void {

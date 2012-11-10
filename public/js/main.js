@@ -128,24 +128,28 @@ var opus;
         ApplicationMediator.prototype.handlePageChange = function (page) {
             var _this = this;
             opus.Logger.log("ApplicationMediator.loadContent", page);
-            $('#aside').slideUp(400);
-            $("#main-content").fadeOut(400, function (e) {
+            this.content = $("<div />");
+            this.content.load(this.getPage(), function (e) {
                 return _this.loadContent();
             });
         };
         ApplicationMediator.prototype.loadContent = function () {
             var _this = this;
             opus.Logger.log("ApplicationMediator.loadContent", this.getPage());
-            $("#main-content").load(this.getPage(), function (e) {
+            $('#aside').slideUp(400);
+            $("#main-content").fadeOut(400, function (e) {
                 return _this.showContent();
             });
         };
         ApplicationMediator.prototype.showContent = function () {
             opus.Logger.log("ApplicationMediator.showContent");
-            var html = $('#main-content aside').detach().html();
-            $('#aside').html(html || "");
-            $('#aside').slideDown(400);
+            $('#main-content').html(this.content.get(0));
             $("#main-content").fadeIn(400);
+            var html = $('#main-content aside').detach().html();
+            if(html) {
+                $('#aside').html(html || "");
+                $('#aside').slideDown(400);
+            }
         };
         ApplicationMediator.prototype.onRemove = function () {
             opus.Logger.log("ApplicationMediator.onRemove");
