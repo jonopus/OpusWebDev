@@ -749,88 +749,12 @@ var org;
 
 var opus;
 (function (opus) {
-    var BubbleUpLogo = (function (_super) {
-        __extends(BubbleUpLogo, _super);
-        function BubbleUpLogo() {
-                _super.call(this);
-            var shape = new createjs.Shape();
-            shape.setTransform(136.1, 46.9);
-            shape.graphics.beginLinearGradientFill([
-                "#1a3957", 
-                "#174771", 
-                "#266281", 
-                "#387d99", 
-                "#7ba8b5", 
-                "#7ba8b5", 
-                "#47889f", 
-                "#28607f", 
-                "#174972", 
-                "#193957"
-            ], [
-                0, 
-                0.098, 
-                0.2, 
-                0.298, 
-                0.408, 
-                0.6, 
-                0.698, 
-                0.8, 
-                0.898, 
-                1
-            ], -97.7, -19.8, 103.5, 2.2).decodePath("ASggVQAbAbAAAmQAAAmgbAbQgbAbgmAAQgVAAgOAPQgOAOAAAVQAAAUAOAPQAOAPAVAAQBPAAA4g4QA4g4AAhPQAAhOg4g4Qg4g4hPAAQg4AAguAeQgGgNgMgIQgMgIgPAAQgUAAgPAPQgOAOAAAVIAACOQAAAmgbAbQgbAbgmAAQgmAAgbgbQgbgbAAgmIAAk/IArApQAcAcAdgdQAdgdgdgcIh6h0QgNgLgQgBQgRAAgMAMIh1BzQgcAcAdAdQAdAdAcgcIAngmIAAE9QAABPA4A4QA4A4BOAAQA0AAAugbIAACeQAAAUAOAPQAPAPAUAAQAVAAAOgPQAPgPAAgUIAAlEQAAgmAbgbQAbgbAmAAQAmAAAbAb").beginLinearGradientFill([
-                "#1e405f", 
-                "#184672", 
-                "#226591", 
-                "#387d99", 
-                "#8ec1ce", 
-                "#8ec1ce", 
-                "#47889f", 
-                "#397ea2", 
-                "#174972", 
-                "#193957"
-            ], [
-                0, 
-                0.098, 
-                0.2, 
-                0.298, 
-                0.408, 
-                0.6, 
-                0.698, 
-                0.8, 
-                0.898, 
-                1
-            ], -99.6, -4.5, 101.7, 17.6).decodePath("AEMhaQg4A4AABPQAAAxAXArIgDAAQgmAAgbgbQgbgbAAgmIAAjZQAAgVgOgOQgOgOgVAAQgVAAgOAOQgOAOAAAVIAACpQgQg+gzgoQg0gphCAAQgUAAgPAPQgPAPAAAUQAAAUAPAPQAPAOAUAAQAmAAAbAbQAbAbAAAmQAAAmgbAbQgbAbgmAAQgmAAgbgbQgbgbAAgmIAAjZQAAgUgPgPQgPgOgUAAQgUAAgPAOQgPAOAAAVIAABTQgbgbgigPQgkgPgnAAQgVAAgOAPQgPAPAAAUQAAAUAPAPQAOAOAVAAQAmAAAbAbQAbAbAAAmQAAAmgbAbQgbAbgmAAQgmAAgagbQgbgbAAgmIAAjZQAAgUgPgPQgPgOgUAAQgUAAgPAOQgPAOAAAVIAABFIgAAFIAACOQAAAmgbAbQgbAbgmAAQgmAAgagbQgbgbAAgmIAAiOQAAgUgPgPQgPgOgUAAQgUAAgPAOQgPAPAAAUIAABFQgWg1gwggQgwghg7AAQgUAAgPAPQgPAPAAAUQAAAUAPAPQAOAOAVAAQAmAAAbAbQAbAbAAAmQAAAmgbAbQgbAbgmAAQgmAAgagbQgbgbAAgmIAAjZQAAgVgPgOQgPgOgUAAQgUAAgOAOQgPAOAAAVIAADZQAABPA4A4QA4A4BPAAQBBAAAzgoQAygnARg8QASA8AyAnQAzAoBAAAQAqAAAmgRQAjgRAbgdQAbAdAkARQAmARApAAQAzAAAsgZQArgZAZgrQAZArArAZQAsAZAzAAQBGAAA1gtQA1gtAMhEQAMBEA1AtQA1AtBGAAIE6AAQAUAAAPgPQAOgPAAgUQAAgUgOgPQgPgPgUAAIiQAAQgmAAgbgbQgbgbAAgmQAAgmAbgbQAbgbAmAAQAYAAAVALQAUAMANATIhHAAQgUAAgPAPQgOAOAAAVQAAAUAOAPQAPAOAUAAICHAAQAUAAAPgOQAOgPAAgUQAAhPg4g4Qg4g4hPAAQhOAAg4A4");
-            var shape_1 = new createjs.Shape();
-            shape_1.setTransform(135.9, 46.5);
-            shape_1.graphics.beginLinearGradientFill([
-                "#3987a1", 
-                "#f7fbfc", 
-                "#43a0b6"
-            ], [
-                0.18, 
-                0.565, 
-                1
-            ], -135.8, 0, 135.9, 0).decodePath("ARfjEQgwAAgrASQgZgQgeAAQgpAAgdAdQgdAdAAApIAACOQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAjcQAKADALAAQAcAAAYgQQAYgRAKgaQAKgZgFgaQgGgagUgTIh6h0QgbgaglAAQgmAAgaAaIh1B0QgTATgGAaQgFAaAKAZQALAaAXAQQAXAQAcAAQAJAAAIgCIAABFQgIgKgJgJQhHhHhjAAQhEAAg6AkQg4AjgfA6IAAhpQAAgpgdgdQgdgdgpAAQgpAAgdAdQgdAdAAApIAAASQg9gqhKAAQgXAAgUAKQgFgkgcgYQgcgZgmAAQgnAAgdAbQgcAagDAnQgqgQgtAAQgXAAgUAKQgFgkgcgYQgcgZglAAQgpAAgdAdQgdAdAAApIgADZQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAiOQAAgpgdgdQgdgdgpAAQgaAAgXANQgWANgNAWIgHgEQg8gqhLAAQgXAAgUAKQgFgkgcgYQgcgZgmAAQgpAAgdAdQgdAdAAApIAADZQAABjBHBHQBGBGBjAAQBSAABAgyQAVgPARgUQASAUATAPQBCAyBQAAQBOAAA/gvQBAAvBOAAQA/AAA5ghQAYgOATgSQASARAaAPQA4AhA/AAQBYAABDg5QASgPAPgTQANASAUAQQAhAcAoAPQAoAPArAAIE6AAQApAAAdgdQAZgZADghQAHAIAIAIQBGBHBjAAQAWAAAagFIAABWQAAApAdAdQAdAdApAAQApAAAdgdQAdgdAAgpIAAhdQATAJAXAAQBjAABGhGQBHhGAAhjQAAhkhHhGQhGhGhjAA").decodePath("ARfABQASAAANANQANANAAASQAAASgNANQgNANgSAAQgWAAgVAJIAAg0QAAgSANgNQANgNASAA").decodePath("ALflCQgJABgGADQgOAGgIANQgIANAAAPQgAgOgIgMQgIgNgOgFQgJgEgHgAIAugtIAtAr").decodePath("AQThLQgeATgRAfQgSAgAAAkIABFEIgBAAIAAieQAAgNgHgMQgHgLgMgHQgMgHgNAAQgMAAgMAHQAggTASgfQATghAAgmIAAiOQAKAVAVAFQAUAGATgL").decodePath("AITgDQAAgMgGgLQAVAiAAAnIg/AAQANgBALgGQAMgHAHgLQAHgLgBgO").decodePath("AGQC9IihAAQAbgBAOgYQAGgLABgNQAAgNgGgLQATAhAgAUQAgATAlAB").decodePath("AhwASQANANAAASQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAg0QASAKAYAAQASAAANAN").decodePath("AnUAFQASAAANANQANANAAASQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAg0QATAKAXAA").decodePath("Ak6gpQAOgFAJgNQAIgMAAgPIAACFQAAAnAUAhQgPgXgbAAQgNAAgLAGQgLAGgHAKQAUgiAAgmQAAg5gogpQAKAKAPADQAOADAOgG").decodePath("ABJAnQATgOAAgYIAAAuQAAANACAMQgEgUgSgM").decodePath("AgAAwQAAgRgDgOQAGAQAOAJQgPAMgDATQACgMAAgN").decodePath("AphhkIAACUQAAA1AjAoQgPgPgVAAQgUAAgPAPQAjgoAAg1IAAiOIABgF").decodePath("AuIAGQAKgNAAgRIAABIQAAASAEAQQgFgNgMgJQgNgKgRAAQgQAAgNAKQgMAJgFAOQAEgRAAgSQAAgdgKgYQAHAPAPAIQAQAIARgEQASgEAMgO").decodePath("AxBASQANANAAASQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAg0QATAKAXAAQASAAANAN");
-            var shape_2 = new createjs.Shape();
-            shape_2.setTransform(137.5, 49.7);
-            shape_2.graphics.beginFill("rgba(0,0,0,0.498)").decodePath("ARfjEQgxAAgrASQgYgQgeAAQgpAAgdAdQgdAdAAApIAACOQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAjcQAKADAKAAQAcAAAYgRQAYgRALgaQAKgZgGgaQgGgagUgTIh6h0QgbgagkAAQgmAAgaAaIh1B0QgTATgGAaQgGAaALAZQALAaAXAQQAYAQAcAAQAJAAAIgCIAABEQgIgJgJgJQhGhHhkAAQhEAAg6AkQg5AjgfA6IAAhpQAAgpgdgdQgdgdgpAAQgpAAgdAdQgdAdAAApIAAASQg9gqhKAAQgXAAgUAKQgFgkgcgYQgcgZgmAAQgnAAgcAbQgdAagDAmQgqgQgtAAQgXAAgUAKQgFgkgcgYQgcgZglAAQgpAAgdAdQgdAdAAApIgADZQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAiOQAAgpgdgdQgdgdgpAAQgaAAgXANQgWANgOAVIgHgEQg8gqhLAAQgXAAgUAKQgFgkgcgYQgcgZgmAAQgpAAgdAdQgdAdAAApIAADZQAABkBHBGQBGBGBjAAQBSAABBgyQAUgPARgUQASAUAUAPQBBAyBQAAQBPAAA/gvQA/AvBOAAQBAAAA4ghQAYgOAUgSQASARAaAPQA5AhA/AAQBYAABDg5QASgPAQgTQANASAUAQQAhAcAoAPQAoAPArAAIE6AAQApAAAdgdQAZgZADghQAHAIAIAIQBGBHBjAAQAWAAAagFIAABWQAAApAdAdQAdAdApAAQApAAAdgdQAdgdAAgpIAAhdQATAJAYAAQBjAABGhGQBHhGAAhjQAAhkhHhGQhGhGhjAA").decodePath("ARfBWQgWAAgUAJIAAg0QAAgSANgNQANgNASAAQASAAANANQANANAAASQAAASgNANQgNANgSAA").decodePath("ALQk+QgOAGgIANQgIANAAAPQgBgOgIgMQgIgNgOgFQgIgEgHgAIAtgtIAtArQgJABgFAD").decodePath("APrhGQAUAGATgLQgeATgRAfQgSAgAAAkIAAFEIgAAAIAAieQAAgNgHgMQgHgLgMgHQgMgHgNAAQgMAAgMAHQAfgTASgfQATghAAgmIAAiOQAJAVAWAF").decodePath("AINgaQAVAiAAAnIg/AAQANgBALgGQAMgHAHgLQAHgLgAgOQAAgMgGgL").decodePath("AEZB0QASAhAgATQAgATAlABIihAAQAbgBAOgXQAHgLAAgNQAAgNgFgL").decodePath("AkbhWIAACFQAAAnATAhQgPgXgaAAQgNAAgMAGQgLAGgHAKQAUgiAAgmQAAg5gogpQAKAKAPADQAOADANgGQAOgFAIgNQAIgMABgP").decodePath("Ai4AwIAAg0QATAKAXAAQASAAANANQANANAAASQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgS").decodePath("Am2ASQANANAAASQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgSIAAg0QASAKAXAAQASAAANAN").decodePath("ABJAnQATgOAAgYIAAAuQAAANACAMQgEgUgSgM").decodePath("AgCBIQACgMAAgNQAAgRgDgOQAGAQAOAJQgPAMgDAT").decodePath("AphhkIAACUQAAA1AjAoQgPgPgVAAQgUAAgPAPQAjgoAAg1IAAiOIAAgF").decodePath("AyIAwIAAg0QASAKAXAAQASAAANANQANANAAASQAAASgNANQgNANgSAAQgSAAgMgNQgNgNAAgS").decodePath("AvRAwQAAgdgKgYQAHAPAPAIQAPAIARgEQASgEALgOQALgNAAgRIAABIQAAASAEAQQgFgNgLgJQgNgKgRAAQgRAAgNAKQgMAJgFAOQAEgRAAgS");
-            this.addChild(shape_2, shape_1, shape);
-        }
-        return BubbleUpLogo;
-    })(createjs.Container);
-    opus.BubbleUpLogo = BubbleUpLogo;    
-})(opus || (opus = {}));
-
-var opus;
-(function (opus) {
     var AnimationMediator = (function (_super) {
         __extends(AnimationMediator, _super);
         function AnimationMediator() {
                 _super.call(this, AnimationMediator.NAME, null);
             this.startedup = new opus.Signal();
             this.preloadComplete = new opus.Signal();
-            this.text = new createjs.Text("Drag and drop the shapes", "24px Cinzel, serif", "#000000");
-            this.text.alpha = 0;
             this.ball = new createjs.Shape();
             this.ball.name = "ball";
             this.ball.graphics.setStrokeStyle(5, 'round', 'round');
@@ -846,7 +770,7 @@ var opus;
             this.ball.x = 200;
             this.ball.y = 50;
             this.ball.alpha = 0;
-            this.logo = new opus.BubbleUpLogo();
+            this.logo = new opuslib.Logo();
             this.logo.alpha = 0;
             this.ballTween = createjs.Tween.get(this.ball);
             this.logoTween = createjs.Tween.get(this.logo);
@@ -885,17 +809,6 @@ var opus;
 
                 }
             }
-            createjs.Tween.get(this.text).to({
-                alpha: 0
-            }, 1000, createjs["Ease"]["sineIn"]).call(this.updateText, [
-                page
-            ], this).to({
-                alpha: 1
-            }, 1000, createjs["Ease"]["sineIn"]);
-        };
-        AnimationMediator.prototype.updateText = function (page) {
-            opus.Logger.log("AnimationMediator.updateText", this.text.text, page);
-            this.text.text = page;
         };
         AnimationMediator.prototype.onRegister = function () {
             var _this = this;
@@ -933,10 +846,10 @@ var opus;
         };
         AnimationMediator.prototype.addItemsToStage = function () {
             opus.Logger.log("AnimationMediator.addItemsToStage");
-            this.stage.addChild(this.ball, this.logo, this.text);
+            this.stage.addChild(this.ball, this.logo);
         };
         AnimationMediator.prototype.show = function () {
-            this.ballTween.to({
+            this.ballTween = this.ballTween.to({
                 alpha: 1
             }, 1000, createjs["Ease"]["sineIn"]);
             this.logoTween.to({
@@ -944,40 +857,61 @@ var opus;
             }, 2000, createjs["Ease"]["sineIn"]);
         };
         AnimationMediator.prototype.qwe = function () {
+            opus.Logger.log("AnimationMediator.qwe", this.logoTween);
+            if(!createjs.Tween.hasActiveTweens(this.ballTween)) {
+                this.ballTween = createjs.Tween.get(this.ball);
+            }
+            if(!createjs.Tween.hasActiveTweens(this.logoTween)) {
+                this.logoTween = createjs.Tween.get(this.logo);
+            }
             this.ballTween.to({
                 x: 5,
                 y: 10,
                 rotation: 0
-            }, 1000, createjs["Ease"]["sineInOut"]);
+            }, 250, createjs["Ease"]["sineInOut"]);
             this.logoTween.to({
                 x: 10,
-                y: -20,
+                y: -10,
                 rotation: 5
-            }, 2000, createjs["Ease"]["sineInOut"]);
+            }, 250, createjs["Ease"]["sineInOut"]);
         };
         AnimationMediator.prototype.asd = function () {
+            if(!createjs.Tween.hasActiveTweens(this.ballTween)) {
+                this.ballTween = createjs.Tween.get(this.ball);
+            }
+            if(!createjs.Tween.hasActiveTweens(this.logoTween)) {
+                this.logoTween = createjs.Tween.get(this.logo);
+            }
+            opus.Logger.log("AnimationMediator.asd", this.logoTween);
             this.ballTween.to({
                 x: 10,
                 y: 20,
                 rotation: 90
-            }, 1000, createjs["Ease"]["sineInOut"]);
+            }, 250, createjs["Ease"]["sineInOut"]);
             this.logoTween.to({
                 x: 20,
-                y: -15,
+                y: 0,
                 rotation: 3
-            }, 2000, createjs["Ease"]["sineInOut"]);
+            }, 250, createjs["Ease"]["sineInOut"]);
         };
         AnimationMediator.prototype.zxc = function () {
+            if(!createjs.Tween.hasActiveTweens(this.ballTween)) {
+                this.ballTween = createjs.Tween.get(this.ball);
+            }
+            if(!createjs.Tween.hasActiveTweens(this.logoTween)) {
+                this.logoTween = createjs.Tween.get(this.logo);
+            }
+            opus.Logger.log("AnimationMediator.zxc", this.logoTween);
             this.ballTween.to({
                 x: 0,
                 y: 30,
                 rotation: 180
-            }, 1000, createjs["Ease"]["sineInOut"]);
+            }, 250, createjs["Ease"]["sineInOut"]);
             this.logoTween.to({
                 x: 30,
-                y: -10,
+                y: 10,
                 rotation: 1
-            }, 2000, createjs["Ease"]["sineInOut"]);
+            }, 250, createjs["Ease"]["sineInOut"]);
         };
         return AnimationMediator;
     })(puremvc.Mediator);

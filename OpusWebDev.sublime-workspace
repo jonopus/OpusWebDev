@@ -67,6 +67,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "modules/shell/src/com/opus/app/view/AnimationMediator.ts",
+			"settings":
+			{
+				"buffer_size": 6648,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "modules/shell/src/com/opus/app/view/components/SwiffyBanner.ts",
+			"settings":
+			{
+				"buffer_size": 901,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "///<reference path=\"../../../../../../../../lib/swiffy-4.9.d.ts\" />\n\nmodule opus {\n   export class SwiffyInstance{\n        \n        public container;\n        public stage;\n\n        constructor(width:number, height:number, data:Object){\n            this.container = $(\"<div style='width: \"+width+\"px; height: \"+height+\"px'>\").get(0);\n            this.stage = new swiffy.Stage(this.container,\n            	data)\n            this.stage.start()\n        }\n    }\n}",
+			"file": "modules/shell/src/com/opus/app/view/components/SwiffyInstance.ts",
+			"file_size": 459,
+			"file_write_time": 129969599856832355,
+			"settings":
+			{
+				"buffer_size": 458,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Java/Ant.sublime-build",
 	"command_palette":
@@ -92,15 +119,35 @@
 	},
 	"file_history":
 	[
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerIPadRio.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerHybrid.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerBluetooth2011.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerBuzz.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerIPad.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerHDRadio.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerHamsters2012.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BannerCPO.ts",
+		"/C/Users/jadams/Downloads/banner_hybrid.swf.html",
+		"/C/Users/jadams/Downloads/banner_hamsters2012.swf.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BubbleUpLogo.ts",
+		"/C/Users/jadams/Downloads/banner_ipad_rio.swf.html",
+		"/C/Users/jadams/Downloads/banner_hdradio.swf.html",
+		"/C/Users/jadams/Downloads/banner_cpo.swf.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/index.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/SwiffyInstance.ts",
+		"/C/Users/jadams/Downloads/banner_buzz.swf.html",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/swiffy-4.9.d.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/easeljs-0.5.d.ts",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/build/user.properties.sample",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/.gitignore",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/build.xml",
+		"/C/Users/jadams/Documents/GitHub/OpusWebDev/build/user.properties",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/HTML360.sublime-workspace",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/HTML360.sublime-project",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/css/main.css",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/ApplicationMediator.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/AnimationMediator.ts",
-		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/index.html",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/tweenjs-0.3.d.ts",
-		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/components/BubbleUpLogo.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/constants/Constants.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/js/main.js",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/public/asd.html",
@@ -109,7 +156,6 @@
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/controller/PrepViewCommand.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/server/HttpServer.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/preloadjs-0.2.d.ts",
-		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/easeljs-0.5.d.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/modules/shell/src/com/opus/app/view/SideBarMediator.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/org/casalib/process/Process.ts",
 		"/C/Users/jadams/Documents/GitHub/OpusWebDev/lib/org/casalib/time/Timer.ts",
@@ -141,6 +187,31 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"goto",
+			"gotoand",
+			", ",
+			",",
+			"stage",
+			"SwiffyInstance",
+			"Handler",
+			"public",
+			"{",
+			"function",
+			"Optima",
+			"BannerIPadRio",
+			"().container);",
+			"$(\"#banners\").append(new ",
+			"BannerBluetooth2011",
+			"Element",
+			"stage",
+			":",
+			"build",
+			"build.",
+			"password",
+			".proper",
+			"=\"${",
+			"server=\"${",
+			" ",
 			"html360",
 			"html",
 			"createjs.Tween.get(this.logo)",
@@ -243,32 +314,7 @@
 			"lf",
 			"Shape",
 			"createjs.",
-			":createjs.",
-			"createjs.",
-			"com.opus.signals",
-			"js/",
-			"com.opus.signals",
-			"aside",
-			"asside",
-			"canvas",
-			"$",
-			"App",
-			"nav li",
-			"@",
-			"aside",
-			".getState()",
-			".\n",
-			"bbq1",
-			"        ",
-			"       ",
-			"      ",
-			"     ",
-			"    ",
-			"   ",
-			"  ",
-			" '",
-			".\n",
-			"\\"
+			":createjs."
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -304,8 +350,89 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "modules/shell/src/com/opus/app/view/AnimationMediator.ts",
+					"settings":
+					{
+						"buffer_size": 6648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5792,
+								5792
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/typescript.tmlanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2040.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "modules/shell/src/com/opus/app/view/components/SwiffyBanner.ts",
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								598,
+								598
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/typescript.tmlanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "modules/shell/src/com/opus/app/view/components/SwiffyInstance.ts",
+					"settings":
+					{
+						"buffer_size": 458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								458,
+								458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/typescript.tmlanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

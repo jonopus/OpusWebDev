@@ -11,7 +11,7 @@
 */
 
 
-/// <reference path="tweenjs-0.3.d.ts" />
+/// <reference path="tweenjs-0.3.d.ts" />;
 
 // rename the native MouseEvent, to avoid conflit with createjs's MouseEvent
 interface NativeMouseEvent extends MouseEvent {
@@ -296,6 +296,38 @@ module createjs {
         setStrokeStyle(thickness: number, caps?: string, joints?: number, miter?: number): Graphics;
         setStrokeStyle(thickness: number, caps?: number, joints?: number, miter?: number): Graphics;
         toString(): string;
+
+        //// tiny API:
+        dr(x: number, y: number, width: number, height: number): Graphics;   // same as rect()
+        a(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise: bool): Graphics;
+        at(x1: number, y1: number, x2: number, y2: number, radius: number): Graphics;
+        bf(image: Object, repetition?: string): Graphics;
+        bs(image: Object, repetition?: string): Graphics;
+        f(color: string): Graphics;
+        lf(colors: string[], ratios: number[], x0: number, y0: number, x1: number, y1: number): Graphics;
+        ls(colors: string[], ratios: number[], x0: number, y0: number, x1: number, y1: number): Graphics;
+        rf(colors: string[], ratios: number[], x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Graphics;
+        rs(colors: string[], ratios: number[], x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Graphics;
+        s(color: string): Graphics;
+        bt(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): Graphics;
+        c(): Graphics;
+        cp(): Graphics;
+        p(str: string): Graphics;
+        dc(x: number, y: number, radius: number): Graphics;
+        de(x: number, y: number, width: number, height: number): Graphics;
+        dp(x: number, y: number, radius: number, sides: number, pointSize: number, angle: number): Graphics;
+        rr(x: number, y: number, width: number, height: number, radius: number): Graphics;
+        rc(x: number, y: number, width: number, height: number, radiusTL: number, radiusTR: number, radiusBR: number, radisBL: number): Graphics;
+        ef(): Graphics;
+        es(): Graphics;
+        lt(x: number, y: number): Graphics;
+        mt(x: number, y: number): Graphics;
+        qt(cpx: number, cpy: number, x: number, y: number): Graphics;
+        r(x: number, y: number, width: number, height: number): Graphics;
+        ss(thickness: number, caps?: string, joints?: string, miter?: number): Graphics;  // caps and joints can be a string or number
+        ss(thickness: number, caps?: number, joints?: string, miter?: number): Graphics;
+        ss(thickness: number, caps?: string, joints?: number, miter?: number): Graphics;
+        ss(thickness: number, caps?: number, joints?: number, miter?: number): Graphics;
     }
 
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CreateJS export from opuslib</title>
+
+<script src="libs/easeljs-0.5.0.min.js"></script>
+<script src="libs/tweenjs-0.3.0.min.js"></script>
+<script src="libs/movieclip-0.5.0.min.js"></script>
+<script src="opuslib.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	exportRoot = new opuslib.opuslib();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(24);
+	createjs.Ticker.addListener(stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="1000" height="478" style="background-color:#ffffff"></canvas>
+</body>
+</html>

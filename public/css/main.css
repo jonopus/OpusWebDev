@@ -159,7 +159,7 @@ body {
 #animation{
     position: absolute;
     overflow: hidden;
-    width: 310px;
+    width: 370px;
     height: 100px;
     pointer-events: none;
 }

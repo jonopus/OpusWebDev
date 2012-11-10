@@ -6,10 +6,8 @@
 ///<reference path="../../../../../../../lib/tweenjs-0.3.d.ts" />
 ///<reference path="../../../../../../../lib/easeljs-0.5.d.ts" />
 ///<reference path="../../../../../../../lib/preloadjs-0.2.d.ts" />
-
-///<reference path='../constants/Constants.ts'/>
-///<reference path='../ApplicationFacade.ts'/>
-///<reference path='components/BubbleUpLogo.ts'/>
+///<reference path="../../../../../../../lib/opuswebdevlib.ts" />
+///<reference path="../../../../../../../lib/opuslib.d.ts" />
 
 module opus {
    export class AnimationMediator extends puremvc.Mediator{
@@ -26,7 +24,6 @@ module opus {
         stage:createjs.Stage;
         ball:createjs.Shape;
         logo:createjs.Container;
-        text:createjs.Text;
         
         ballTween:createjs.Tween;
         logoTween:createjs.Tween;
@@ -34,9 +31,6 @@ module opus {
         constructor(){
             super(AnimationMediator.NAME, null);
 
-            this.text = new createjs.Text("Drag and drop the shapes", "24px Cinzel, serif", "#000000");
-            this.text.alpha = 0;
-            
             this.ball = new createjs.Shape();
             this.ball.name = "ball";
             this.ball.graphics.setStrokeStyle(5, 'round', 'round');
@@ -53,7 +47,7 @@ module opus {
             this.ball.y = 50;
             this.ball.alpha = 0;
 
-            this.logo = new BubbleUpLogo();
+            this.logo = new opuslib.Logo();
             this.logo.alpha = 0;
 
             this.ballTween = createjs.Tween.get(this.ball);
@@ -86,17 +80,6 @@ module opus {
                     this.zxc();
                     break;
             }
-
-            createjs.Tween
-                .get(this.text)
-                .to({alpha:0}, 1000, createjs["Ease"]["sineIn"])
-                .call(this.updateText, [page], this)
-                .to({alpha:1}, 1000, createjs["Ease"]["sineIn"]);
-        }
-
-        public updateText(page:string):void {
-            Logger.log("AnimationMediator.updateText", this.text.text, page);
-            this.text.text = page;
         }
 
         public onRegister():void {
@@ -138,29 +121,61 @@ module opus {
 
             this.stage.addChild(
                 this.ball,
-                this.logo,
-                this.text
+                this.logo
             );
+            
         }
 
         show(){
-            this.ballTween.to({alpha:1}, 1000, createjs["Ease"]["sineIn"]);
+            this.ballTween = this.ballTween.to({alpha:1}, 1000, createjs["Ease"]["sineIn"]);
             this.logoTween.to({alpha:1}, 2000, createjs["Ease"]["sineIn"]);
         }
 
         qwe(){
-            this.ballTween.to({x:5, y:10, rotation:0}, 1000, createjs["Ease"]["sineInOut"]);
-            this.logoTween.to({x:10, y:-20, rotation:5}, 2000, createjs["Ease"]["sineInOut"]);
+            Logger.log("AnimationMediator.qwe", this.logoTween);
+
+            if(!createjs.Tween.hasActiveTweens(this.ballTween)){
+                this.ballTween = createjs.Tween.get(this.ball);
+            }
+
+            if(!createjs.Tween.hasActiveTweens(this.logoTween)){
+                this.logoTween = createjs.Tween.get(this.logo);
+            }
+
+            this.ballTween.to({x:5, y:10, rotation:0}, 250, createjs["Ease"]["sineInOut"]);
+            this.logoTween.to({x:10, y:-10, rotation:5}, 250, createjs["Ease"]["sineInOut"]);
         }
 
         asd(){
-            this.ballTween.to({x:10, y:20, rotation:90}, 1000, createjs["Ease"]["sineInOut"]);
-            this.logoTween.to({x:20, y:-15, rotation:3}, 2000, createjs["Ease"]["sineInOut"]);
+
+            if(!createjs.Tween.hasActiveTweens(this.ballTween)){
+                this.ballTween = createjs.Tween.get(this.ball);
+            }
+
+            if(!createjs.Tween.hasActiveTweens(this.logoTween)){
+                this.logoTween = createjs.Tween.get(this.logo);
+            }
+
+            
+            Logger.log("AnimationMediator.asd", this.logoTween);
+            this.ballTween.to({x:10, y:20, rotation:90}, 250, createjs["Ease"]["sineInOut"]);
+            this.logoTween.to({x:20, y:0, rotation:3}, 250, createjs["Ease"]["sineInOut"]);
         }
 
         zxc(){
-            this.ballTween.to({x:0, y:30, rotation:180}, 1000, createjs["Ease"]["sineInOut"]);
-            this.logoTween.to({x:30, y:-10, rotation:1}, 2000, createjs["Ease"]["sineInOut"]);
+
+            if(!createjs.Tween.hasActiveTweens(this.ballTween)){
+                this.ballTween = createjs.Tween.get(this.ball);
+            }
+
+            if(!createjs.Tween.hasActiveTweens(this.logoTween)){
+                this.logoTween = createjs.Tween.get(this.logo);
+            }
+
+            
+            Logger.log("AnimationMediator.zxc", this.logoTween);
+            this.ballTween.to({x:0, y:30, rotation:180}, 250, createjs["Ease"]["sineInOut"]);
+            this.logoTween.to({x:30, y:10, rotation:1}, 250, createjs["Ease"]["sineInOut"]);
         }
     }
 }

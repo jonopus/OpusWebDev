@@ -2,11 +2,13 @@
 
 module opus {
    export class BubbleUpLogo extends createjs.Container{
-        
+        shape;
+        shape_1;
+
         constructor(){
             super();
 
-            var shape = new createjs.Shape();
+            /*var shape = new createjs.Shape();
             shape.setTransform(136.1, 46.9);
             shape.graphics
                 .beginLinearGradientFill(["#1a3957","#174771","#266281","#387d99","#7ba8b5","#7ba8b5","#47889f","#28607f","#174972","#193957"],[0,0.098,0.2,0.298,0.408,0.6,0.698,0.8,0.898,1],-97.7,-19.8,103.5,2.2)
@@ -57,6 +59,7 @@ module opus {
                 shape_1,
                 shape
             );
+            */
         }
     }
 }

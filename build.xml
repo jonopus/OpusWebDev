@@ -27,8 +27,10 @@
 			server="${ftp.server}"
 			userid="${ftp.user}"
 			password="${ftp.password}"
+			passive="yes"
+			verbose="yes"
 		>
-			<fileset dir="./public/js"/>
+			<fileset dir="./public"/>
 		</ftp>
 	</target>
 </project>
